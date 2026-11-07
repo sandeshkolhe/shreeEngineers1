@@ -1,0 +1,135 @@
+/* Shree Engineers - Plain CSS Styles */
+:root {
+  --primary-blue: #0284C7;
+  --primary-dark: #0F172A;
+  --primary-navy: #1E3A8A;
+  --accent-amber: #D97706;
+  --accent-emerald: #059669;
+  --bg-slate: #F8FAFC;
+  --border-slate: #E2E8F0;
+  --text-slate: #334155;
+  --text-dark: #0F172A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-slate);
+  color: var(--text-slate);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Blueprint pattern background */
+.blueprint-pattern-light {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(2, 132, 199, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2, 132, 199, 0.05) 1px, transparent 1px);
+}
+
+.blueprint-grid-dense-light {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(14, 116, 144, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 116, 144, 0.06) 1px, transparent 1px);
+}
+
+/* Custom transitions and interactive styling */
+.service-tab-btn.active {
+  background: linear-gradient(to right, #0284c7, #1d4ed8) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+  border-color: #0284c7 !important;
+  transform: scale(1.02);
+}
+
+.service-tab-btn.active svg {
+  color: #ffffff !important;
+}
+
+.tech-filter-btn.active {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+  border-color: #0284c7 !important;
+}
+
+.portfolio-filter-btn.active {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+  border-color: #0284c7 !important;
+}
+
+.portfolio-filter-btn.active-software {
+  background-color: #d97706 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
+  border-color: #d97706 !important;
+}
+
+/* Modal animation */
+.modal-backdrop {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+.modal-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  transform: scale(0.95);
+  transition: all 0.25s ease-in-out;
+}
+
+.modal-backdrop.active .modal-content {
+  transform: scale(1);
+}
+
+/* FAQ item expand */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 250px;
+}
+
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* Mobile drawer */
+#mobile-menu {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden-menu {
+  display: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

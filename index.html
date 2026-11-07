@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Engineers | Industrial Engineering Design & Digital Software Solutions</title>
+  <meta name="description" content="Shree Engineers specializes in AutoCAD 2D/3D, Mechanical Equipment (Pressure Vessels, Heat Exchangers, Storage Tanks), Civil & Structural, Piping E3D Design, and Modern Enterprise Software & Mobile Solutions.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230284C7'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- ==================== 1. TOP STICKY NAVBAR ==================== -->
+  <header id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-100 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 via-blue-600 to-amber-500 p-0.5 shadow-md shadow-sky-500/15 group-hover:shadow-sky-500/30 transition-all">
+            <div class="w-full h-full bg-white rounded-[10px] flex items-center justify-center">
+              <i data-lucide="compass" class="w-5 h-5 text-sky-600 group-hover:rotate-45 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <div>
+            <div class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-1.5 font-sans">
+              SHREE <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-blue-700">ENGINEERS</span>
+            </div>
+            <div class="text-[10px] uppercase tracking-wider text-slate-500 font-mono font-medium">
+              CAD • Heavy Equip • Software
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          <a href="#home" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-sky-600 transition-colors">Home</a>
+          
+          <!-- Services Dropdown (hover triggered) -->
+          <div class="relative group">
+            <button class="flex items-center gap-1 px-3 py-2 text-sm font-semibold text-slate-700 hover:text-sky-600 transition-colors">
+              <span>Services</span>
+              <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-hover:rotate-180 group-hover:text-sky-600 transition-transform"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-80 bg-white border border-slate-200 rounded-2xl shadow-xl p-3 z-50 hidden group-hover:block transition-all">
+              <div class="text-[11px] font-bold text-sky-700 uppercase tracking-wider px-3 py-1 font-mono">Engineering Design</div>
+              <a href="#engineering-services" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-sky-50 text-slate-700 hover:text-sky-800 transition-all">
+                <div class="p-2 rounded-lg bg-sky-100/70 border border-sky-200 text-sky-700">
+                  <i data-lucide="cpu" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-slate-900">CAD, Equipment & Piping</div>
+                  <div class="text-xs text-slate-500">AutoCAD 2D/3D, Pressure Vessels, Tanks, E3D</div>
+                </div>
+              </a>
+              <div class="text-[11px] font-bold text-amber-700 uppercase tracking-wider px-3 py-1 mt-2 font-mono border-t border-slate-100 pt-2">Digital Solutions</div>
+              <a href="#software-services" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-amber-50 text-slate-700 hover:text-amber-800 transition-all">
+                <div class="p-2 rounded-lg bg-amber-100/70 border border-amber-200 text-amber-700">
+                  <i data-lucide="code-2" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-slate-900">Web, ERP & Mobile Apps</div>
+                  <div class="text-xs text-slate-500">Enterprise software, React, Spring Boot, Flutter</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="#technologies" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-sky-600 transition-colors">Tech Stack</a>
+          <a href="#training" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-sky-600 transition-colors">Training</a>
+          <a href="#why-us" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-sky-600 transition-colors">Why Choose Us</a>
+          <a href="#portfolio" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-sky-600 transition-colors">Projects</a>
+          <a href="#contact" class="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-sky-600 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Quick Actions & CTA -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="https://wa.me/919876543210?text=Hello%20Shree%20Engineers,%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-300 hover:bg-emerald-100 transition-all" title="Chat on WhatsApp">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+            <span>WhatsApp</span>
+          </a>
+          <button onclick="openQuoteModal()" class="flex items-center gap-2 px-5 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 transform hover:-translate-y-0.5 transition-all">
+            <span>Get a Quote</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-100 border border-slate-200 text-slate-700 hover:text-sky-600 focus:outline-none" aria-label="Toggle Navigation">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden-menu lg:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-4 pt-3 pb-6 shadow-xl">
+      <div class="flex flex-col gap-2">
+        <a href="#home" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-slate-100 text-sm font-semibold">Home</a>
+        <a href="#engineering-services" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-sky-50 text-sm font-semibold flex items-center justify-between">
+          <span>Engineering & CAD Services</span>
+          <span class="text-[10px] font-mono bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-bold">Core</span>
+        </a>
+        <a href="#software-services" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-amber-50 text-sm font-semibold flex items-center justify-between">
+          <span>Software & Digital Solutions</span>
+          <span class="text-[10px] font-mono bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-bold">Digital</span>
+        </a>
+        <a href="#technologies" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-slate-100 text-sm font-semibold">Tech Stack & Standards</a>
+        <a href="#training" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-slate-100 text-sm font-semibold">Training Programmes</a>
+        <a href="#why-us" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-slate-100 text-sm font-semibold">Why Choose Us</a>
+        <a href="#portfolio" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-slate-100 text-sm font-semibold">Featured Projects</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-slate-100 text-sm font-semibold">Contact Us</a>
+        <div class="pt-4 border-t border-slate-200 flex flex-col gap-2">
+          <button onclick="toggleMobileMenu(); openQuoteModal();" class="w-full py-3 rounded-xl text-center text-sm font-bold text-white bg-gradient-to-r from-sky-600 to-blue-700 shadow-md shadow-sky-600/20">
+            Request a Quote
+          </button>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl text-center text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-300 flex items-center justify-center gap-2">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            Chat on WhatsApp (+91 98765 43210)
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-slate-50 blueprint-pattern-light border-b border-slate-200">
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-sky-200/40 blur-[120px] rounded-full pointer-events-none"></div>
+      <div class="absolute top-1/3 right-10 w-[400px] h-[300px] bg-amber-200/30 blur-[100px] rounded-full pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-bold shadow-sm">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-sky-600"></i>
+              <span>Heavy Engineering Precision Meets Cutting-Edge Software</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.14]">
+              Engineering Design & <br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-700 to-indigo-700">
+                Digital Enterprise Solutions
+              </span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              From <strong>ASME Pressure Vessels</strong>, <strong>Heat Exchangers</strong>, <strong>API 650 Storage Tanks</strong>, and <strong>E3D Piping Works</strong> to full-scale <strong>Enterprise ERPs</strong>, <strong>React/Spring Boot Portals</strong>, and <strong>Mobile Applications</strong>.
+            </p>
+
+            <div class="flex flex-wrap justify-center lg:justify-start gap-2 pt-1 font-mono text-xs">
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 shadow-sm flex items-center gap-1.5 font-medium">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-sky-600"></i> AutoCAD 2D/3D
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 shadow-sm flex items-center gap-1.5 font-medium">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-sky-600"></i> ASME Sec VIII & API 650
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 shadow-sm flex items-center gap-1.5 font-medium">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-amber-600"></i> Web Apps & ERP
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 shadow-sm flex items-center gap-1.5 font-medium">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-amber-600"></i> Flutter Android & iOS
+              </span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+              <button onclick="openQuoteModal()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-sky-600 via-blue-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-lg shadow-sky-600/25 hover:shadow-sky-600/40 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 group">
+                <span>Request Custom Quote</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+              </button>
+
+              <a href="#engineering-services" class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-bold text-sm text-slate-700 bg-white hover:bg-slate-50 border border-slate-300 hover:border-sky-500 shadow-sm transition-all flex items-center justify-center gap-2">
+                <span>Explore Engineering Services</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Live Spec Card -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="relative p-1 rounded-3xl bg-gradient-to-br from-sky-200 via-slate-200 to-amber-200 shadow-xl">
+                <div class="bg-white rounded-[22px] p-6 space-y-5 border border-slate-100">
+                  <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <div class="flex items-center gap-2">
+                      <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                      <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                      <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+                      <span class="text-xs font-mono text-slate-500 ml-2">shree-engineers-hub.env</span>
+                    </div>
+                    <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-200 font-bold">
+                      LIVE SPEC
+                    </span>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 transition-all group">
+                    <div class="flex items-center justify-between mb-2">
+                      <div class="flex items-center gap-2">
+                        <div class="p-1.5 rounded-lg bg-sky-100 text-sky-700">
+                          <i data-lucide="compass" class="w-4 h-4"></i>
+                        </div>
+                        <h2 class="text-sm font-bold text-slate-900 group-hover:text-sky-700 transition-colors">
+                          Heavy Engineering & Plant CAD
+                        </h2>
+                      </div>
+                      <span class="text-[10px] font-mono bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-bold">
+                        ASME / TEMA / API
+                      </span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                      Pressure vessels, Shell & Tube heat exchangers, API 650 storage tanks, and AVEVA E3D 3D piping routing.
+                    </p>
+                    <div class="flex items-center justify-between text-[11px] text-sky-700 font-mono border-t border-slate-200/80 pt-2 font-medium">
+                      <span>✓ 2D/3D Clashing Check</span>
+                      <span class="text-slate-500">0.00mm Clash Tol</span>
+                    </div>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-amber-400 transition-all group">
+                    <div class="flex items-center justify-between mb-2">
+                      <div class="flex items-center gap-2">
+                        <div class="p-1.5 rounded-lg bg-amber-100 text-amber-800">
+                          <i data-lucide="code-2" class="w-4 h-4"></i>
+                        </div>
+                        <h2 class="text-sm font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
+                          Software, ERP & Cloud Portals
+                        </h2>
+                      </div>
+                      <span class="text-[10px] font-mono bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-bold">
+                        Full-Stack & Mobile
+                      </span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                      Custom ERPs, CRM systems, Flutter apps, secure authentication, live analytics, and REST API microservices.
+                    </p>
+                    <div class="flex items-center justify-between text-[11px] text-amber-800 font-mono border-t border-slate-200/80 pt-2 font-medium">
+                      <span>✓ React • Spring • .NET • Flutter</span>
+                      <span class="text-slate-500">99.9% Uptime</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between text-xs text-slate-500 pt-1">
+                    <div class="flex items-center gap-1.5 text-emerald-700 font-semibold">
+                      <i data-lucide="shield-check" class="w-4 h-4"></i>
+                      <span>Certified Industrial Quality</span>
+                    </div>
+                    <span class="font-mono text-[11px] text-slate-400 font-bold">ISO • ASME • API</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. STATS BANNER ==================== -->
+    <div class="relative border-b border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="p-2 rounded-xl bg-sky-50 text-sky-600"><i data-lucide="layers" class="w-5 h-5"></i></div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">2,500+</span>
+            </div>
+            <div class="text-xs sm:text-sm font-bold text-slate-800">Engineering Drawings & Models</div>
+            <div class="text-[11px] text-slate-500 font-mono mt-0.5 font-medium">AutoCAD & E3D Deliverables</div>
+          </div>
+
+          <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="p-2 rounded-xl bg-blue-50 text-blue-600"><i data-lucide="factory" class="w-5 h-5"></i></div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">350+</span>
+            </div>
+            <div class="text-xs sm:text-sm font-bold text-slate-800">Process Vessels & Tanks Sized</div>
+            <div class="text-[11px] text-slate-500 font-mono mt-0.5 font-medium">ASME VIII & API 650 Compliant</div>
+          </div>
+
+          <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="p-2 rounded-xl bg-amber-50 text-amber-600"><i data-lucide="globe-2" class="w-5 h-5"></i></div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">120+</span>
+            </div>
+            <div class="text-xs sm:text-sm font-bold text-slate-800">Software & Mobile Deployments</div>
+            <div class="text-[11px] text-slate-500 font-mono mt-0.5 font-medium">Web Apps, ERPs & Flutter</div>
+          </div>
+
+          <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="p-2 rounded-xl bg-emerald-50 text-emerald-600"><i data-lucide="users" class="w-5 h-5"></i></div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">1,800+</span>
+            </div>
+            <div class="text-xs sm:text-sm font-bold text-slate-800">Engineers & Trainees Mentored</div>
+            <div class="text-[11px] text-slate-500 font-mono mt-0.5 font-medium">CAD & Full-Stack Bootcamps</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 4. ENGINEERING & CAD SERVICES ==================== -->
+    <section id="engineering-services" class="py-24 relative bg-slate-50 blueprint-pattern-light border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-bold mb-3 shadow-sm">
+            <i data-lucide="drafting-compass" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span>Industrial Engineering & Design Excellence</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Comprehensive <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-blue-700">Engineering & CAD</span> Services
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
+            From precision 2D drafting and 3D plant layouts to heavy static equipment design in strict compliance with <strong>ASME</strong>, <strong>TEMA</strong>, and <strong>API 650</strong> international standards.
+          </p>
+        </div>
+
+        <!-- Service Tab Selector Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10">
+          <button data-tab="autocad-2d-3d" onclick="selectEngineeringTab('autocad-2d-3d')" class="service-tab-btn active flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-sm">
+            <i data-lucide="drafting-compass" class="w-4 h-4 text-sky-600"></i>
+            <span>AutoCAD 2D & 3D Design</span>
+          </button>
+          <button data-tab="mechanical-equipment" onclick="selectEngineeringTab('mechanical-equipment')" class="service-tab-btn flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-sm">
+            <i data-lucide="boxes" class="w-4 h-4 text-sky-600"></i>
+            <span>Mechanical Equipment Design</span>
+          </button>
+          <button data-tab="machine-compound-design" onclick="selectEngineeringTab('machine-compound-design')" class="service-tab-btn flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-sm">
+            <i data-lucide="cpu" class="w-4 h-4 text-sky-600"></i>
+            <span>Machine & Component Design</span>
+          </button>
+          <button data-tab="civil-structural-design" onclick="selectEngineeringTab('civil-structural-design')" class="service-tab-btn flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-sm">
+            <i data-lucide="building-2" class="w-4 h-4 text-sky-600"></i>
+            <span>Civil & Structural Design</span>
+          </button>
+          <button data-tab="piping-e3d-works" onclick="selectEngineeringTab('piping-e3d-works')" class="service-tab-btn flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-sm">
+            <i data-lucide="git-branch" class="w-4 h-4 text-sky-600"></i>
+            <span>Piping Design Works & AVEVA E3D</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Service Display Box -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-xl relative overflow-hidden">
+          <div class="absolute inset-0 blueprint-grid-dense-light opacity-40 pointer-events-none"></div>
+
+          <div class="relative z-10 grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-7 space-y-6">
+              <div class="flex flex-wrap items-center gap-3">
+                <div class="p-3 rounded-2xl bg-sky-50 border border-sky-200 text-sky-700 shadow-sm">
+                  <i data-lucide="boxes" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <span id="eng-badge" class="text-[11px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-100 px-2.5 py-0.5 rounded border border-sky-200">
+                    Core Engineering
+                  </span>
+                  <h3 id="eng-title" class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+                    AutoCAD 2D & 3D Design
+                  </h3>
+                </div>
+              </div>
+
+              <p id="eng-desc" class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                We provide comprehensive 2D drafting and 3D modeling solutions following ISO, DIN, and ASME drafting standards.
+              </p>
+
+              <!-- Dynamic Subcategories for Mechanical Equipment (Pressure Vessels, Heat Exchangers, Storage Tanks) -->
+              <div id="eng-subcategories-container" class="space-y-3 pt-2 hidden"></div>
+
+              <!-- Key Highlights -->
+              <div class="space-y-3 pt-1">
+                <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-sky-800 flex items-center gap-1.5">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-sky-600"></i>
+                  Key Highlights & Scope of Work
+                </h4>
+                <div id="eng-highlights-container" class="grid sm:grid-cols-2 gap-2.5"></div>
+              </div>
+            </div>
+
+            <!-- Right Column: Standards & Deliverables -->
+            <div class="lg:col-span-5 flex flex-col justify-between space-y-6 bg-slate-50 border border-slate-200 rounded-2xl p-6">
+              <div class="space-y-5">
+                <div>
+                  <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-600 mb-2.5 flex items-center gap-1.5">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+                    Compliance & Codes Followed
+                  </div>
+                  <div id="eng-standards-container" class="flex flex-wrap gap-1.5"></div>
+                </div>
+
+                <div>
+                  <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-600 mb-2 flex items-center gap-1.5">
+                    <i data-lucide="file-text" class="w-4 h-4 text-sky-600"></i>
+                    Engineering Deliverables
+                  </div>
+                  <ul id="eng-deliverables-container" class="space-y-1.5 text-xs text-slate-700 font-medium"></ul>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-200 space-y-3">
+                <div class="text-xs text-slate-600 font-medium">
+                  Ready to calculate, draft, or model your next mechanical asset?
+                </div>
+                <button id="eng-inquire-btn" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
+                  <span class="eng-btn-text">Inquire for AutoCAD 2D & 3D Design</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. SOFTWARE & DIGITAL SOLUTIONS ==================== -->
+    <section id="software-services" class="py-24 relative bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-bold mb-3 shadow-sm">
+            <i data-lucide="code-2" class="w-3.5 h-3.5 text-amber-600"></i>
+            <span>Digital Transformation & Enterprise IT</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Custom <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-orange-600 to-sky-700">Software & Digital</span> Solutions
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
+            High-velocity Web Apps, ERPs, CRM systems, Flutter Mobile Apps, and Cloud Architectures tailored to optimize your business operations and automate mission-critical workflows.
+          </p>
+        </div>
+
+        <!-- 11 Software Capability Cards -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="globe" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Enterprise Web</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Web Applications & Business Portals</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Custom, cloud-native web portals and SaaS platforms built with high-velocity frameworks for exceptional reliability and responsiveness.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('Web Applications & Business Portals')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="layout-dashboard" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Operations</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Admin Panels & CRM Systems</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Centralized client management, sales pipelines, task tracking, and role-governed admin interfaces to streamline enterprise workflows.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('Admin Panels & CRM Systems')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="network" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Full ERP</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">ERP & Business Management Software</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Integrated ERP systems orchestrating inventory, procurement, billing, production scheduling, and vendor relationships.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('ERP & Business Management Software')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="smartphone" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Cross-Platform</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Android & iOS Mobile Applications</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Cross-platform mobile apps built with Flutter, ensuring fluid 60FPS UI, offline capability, and native OS integrations.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('Android & iOS Mobile Applications')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Security First</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Secure Login, User Roles & Permissions</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Enterprise-grade authentication with JWT/OAuth2, multi-factor authentication (MFA), and fine-grained Role-Based Access Control (RBAC).</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('Secure Login, User Roles & Permissions')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="shopping-cart" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Digital Commerce</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">E-Commerce Websites & Online Platforms</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Scalable B2B & B2C e-commerce portals equipped with secure payment gateways, inventory sync, and intelligent order tracking.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('E-Commerce Websites & Online Platforms')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="bar-chart-3" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Real-time BI</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Interactive Dashboards & Reporting Systems</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Live analytics dashboards, scheduled automated report generation, and data visualization engines for strategic decision-making.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('Interactive Dashboards & Reporting Systems')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="webhook" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Interoperability</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">REST APIs & Third-Party Integrations</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Robust REST & GraphQL microservices integrating payment gateways, SMS/Email services, ERPs, and legacy enterprise software.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('REST APIs & Third-Party Integrations')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="cloud" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">High Availability</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Cloud Hosting, Deployment & Maintenance</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Automated CI/CD pipelines, containerized Docker deployments, AWS/Azure setup, monitoring, and 99.9% uptime maintenance.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('Cloud Hosting, Deployment & Maintenance')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="database" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Robust Backend</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Database Design & Backend Development</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">High-performance data architecture using PostgreSQL, MySQL, and MongoDB with indexing, replication, and query optimization.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('Database Design & Backend Development')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl bg-slate-50/80 border border-slate-200 p-6 hover:border-amber-400 hover:bg-white transition-all duration-200 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-xl bg-amber-100/70 border border-amber-200 text-amber-800"><i data-lucide="cog" class="w-5 h-5"></i></div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded bg-white text-amber-800 border border-slate-200">Smart Automation</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Workflow Automation & Custom Business Solutions</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Eliminate repetitive operations with tailored digital workflows, approval triggers, document parsing, and business logic automation.</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
+              <button onclick="openQuoteModal('Workflow Automation & Custom Business Solutions')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Consultation Callout Banner -->
+        <div class="mt-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-amber-50 via-sky-50 to-blue-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+          <div class="space-y-1 text-center sm:text-left">
+            <h4 class="text-base sm:text-lg font-bold text-slate-900">Looking for a custom software solution or end-to-end ERP?</h4>
+            <p class="text-xs sm:text-sm text-slate-600">We engineer secure, scalable, and tailored software architectures with round-the-clock maintenance.</p>
+          </div>
+          <button onclick="openQuoteModal('Custom Software Solution')" class="whitespace-nowrap px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-amber-600 to-sky-600 hover:from-amber-700 hover:to-sky-700 shadow-md shadow-amber-600/20 transform hover:-translate-y-0.5 transition-all">
+            Schedule Software Consultation
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 6. TECH STACK MATRIX ==================== -->
+    <section id="technologies" class="py-24 relative bg-slate-50 blueprint-pattern-light border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-bold mb-3 shadow-sm">
+            <i data-lucide="terminal" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span>Modern Technology Ecosystem</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Technologies & Tools <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-700">We Work With</span>
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
+            We combine high-performance enterprise software stacks with industry-standard engineering drafting and modeling platforms.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10">
+          <button data-tech="all" onclick="filterTech('all')" class="tech-filter-btn active flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs bg-white text-slate-700 border border-slate-200">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            <span>All Technologies & Tools</span>
+          </button>
+          <button data-tech="frontend" onclick="filterTech('frontend')" class="tech-filter-btn flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs bg-white text-slate-700 border border-slate-200">
+            <i data-lucide="code-2" class="w-3.5 h-3.5"></i>
+            <span>Frontend</span>
+          </button>
+          <button data-tech="backend" onclick="filterTech('backend')" class="tech-filter-btn flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs bg-white text-slate-700 border border-slate-200">
+            <i data-lucide="server" class="w-3.5 h-3.5"></i>
+            <span>Backend & APIs</span>
+          </button>
+          <button data-tech="mobile" onclick="filterTech('mobile')" class="tech-filter-btn flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs bg-white text-slate-700 border border-slate-200">
+            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+            <span>Mobile Apps</span>
+          </button>
+          <button data-tech="database" onclick="filterTech('database')" class="tech-filter-btn flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs bg-white text-slate-700 border border-slate-200">
+            <i data-lucide="database" class="w-3.5 h-3.5"></i>
+            <span>Databases</span>
+          </button>
+          <button data-tech="engineering" onclick="filterTech('engineering')" class="tech-filter-btn flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs bg-white text-slate-700 border border-slate-200">
+            <i data-lucide="compass" class="w-3.5 h-3.5"></i>
+            <span>Engineering & CAD</span>
+          </button>
+        </div>
+
+        <!-- Tech Cards Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="frontend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Frontend</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Production</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">React</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Interactive, scalable component-driven Web UIs</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="frontend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Frontend</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Enterprise</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">TypeScript</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Type-safe robust web and client application code</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="frontend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Frontend</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Core</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">JavaScript (ES6+)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">High performance client-side web scripting</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="frontend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Frontend</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Design System</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">Tailwind CSS</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Utility-first modern responsive UI framework</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="backend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Backend</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Enterprise Tier</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">Java & Spring Boot</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Battle-tested microservices and enterprise business logic</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="backend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Backend</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">High Performance</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">.NET & C#</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Robust web APIs, Windows services, and cloud backends</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="backend">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Backend</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Standards-based</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">REST APIs & Microservices</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Secure, predictable API communication protocols</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="mobile">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Mobile</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Cross-Platform</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">Flutter & Dart</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Single codebase compiling natively to Android and iOS</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="database">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Database</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Relational</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">SQL (PostgreSQL / MySQL)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">ACID-compliant, normalized complex business schemas</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="database">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Database</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">NoSQL</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">MongoDB</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Flexible, high-throughput unstructured data storage</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="engineering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Engineering CAD</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Gold Standard</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">AutoCAD (2D & 3D)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Precision fabrication, layout, and drafting</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="engineering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Engineering CAD</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Plant Modeling</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">AVEVA E3D / PDMS</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Intelligent 3D plant piping and equipment layout</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="engineering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Engineering CAD</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Standards</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">ASME / TEMA / API Codes</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Sec VIII Div 1/2, TEMA Class R/C, API 650 storage tanks</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+          <div class="tech-card p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex flex-col justify-between" data-cat="engineering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-0.5 rounded border border-sky-200">Engineering CAD</span>
+                <span class="text-[11px] font-mono font-bold text-amber-700">Structural</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">Civil & Structural Detailing</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">Industrial steel structures, pipe racks, and foundations (AISC / IS 800)</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-700 font-mono font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> <span>Production Verified</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 7. TRAINING PROGRAMMES ==================== -->
+    <section id="training" class="py-24 relative bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-bold mb-3 shadow-sm">
+            <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span>Industry-Oriented Skill Development</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Specialized <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-700">Training Programmes</span>
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
+            Bridge the gap between academic theory and real-world industrial practice. Learn directly from practicing piping engineers, ASME equipment designers, and senior software architects.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          
+          <div class="bg-white rounded-3xl border border-slate-200 hover:border-sky-400 p-6 sm:p-8 flex flex-col justify-between transition-all duration-200 shadow-sm hover:shadow-xl hover:-translate-y-1 group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-[11px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-1 rounded-lg border border-sky-200">Engineering Academy</span>
+                <div class="flex items-center gap-1.5 text-xs text-amber-700 font-mono font-bold">
+                  <i data-lucide="clock" class="w-3.5 h-3.5"></i> <span>8 - 12 Weeks</span>
+                </div>
+              </div>
+              <h3 class="text-xl font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors mb-3">Industrial Piping & E3D Plant Design Training</h3>
+              <div class="text-xs text-slate-600 mb-6 flex items-center gap-2 font-mono font-medium">
+                <i data-lucide="book-open" class="w-4 h-4 text-sky-600 shrink-0"></i>
+                <span>Hands-on Practical & Live Industrial Projects</span>
+              </div>
+              <div class="space-y-2.5 mb-6">
+                <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-700">Curriculum Highlights:</div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>AVEVA E3D / PDMS 3D Modeling & Equipment Layout</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>Piping Isometrics, P&ID Reading & MTO Generation</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>ASME B31.3 Code Guidelines & CAESAR II Basics</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>Industry-standard project portfolio creation</span></div>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-slate-100 space-y-4">
+              <div class="text-[11px] text-slate-500 font-medium"><strong class="text-slate-800">Target Audience:</strong> Mechanical & Chemical Engineers, Diploma Holders, CAD Draftsmen</div>
+              <button onclick="openQuoteModal('Training: Industrial Piping & E3D Plant Design Training')" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
+                <span>Enroll or Inquire</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl border border-slate-200 hover:border-sky-400 p-6 sm:p-8 flex flex-col justify-between transition-all duration-200 shadow-sm hover:shadow-xl hover:-translate-y-1 group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-[11px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-1 rounded-lg border border-sky-200">Equipment Specialization</span>
+                <div class="flex items-center gap-1.5 text-xs text-amber-700 font-mono font-bold">
+                  <i data-lucide="clock" class="w-3.5 h-3.5"></i> <span>6 - 10 Weeks</span>
+                </div>
+              </div>
+              <h3 class="text-xl font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors mb-3">Pressure Vessel & Heat Exchanger Design (ASME / API)</h3>
+              <div class="text-xs text-slate-600 mb-6 flex items-center gap-2 font-mono font-medium">
+                <i data-lucide="book-open" class="w-4 h-4 text-sky-600 shrink-0"></i>
+                <span>Code Calculations + Software Modeling</span>
+              </div>
+              <div class="space-y-2.5 mb-6">
+                <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-700">Curriculum Highlights:</div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>ASME Sec VIII Div 1 Code Calculations (Shell, Heads, Nozzles)</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>TEMA Shell & Tube Heat Exchanger Thermal & Mechanical Design</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>API 650 Storage Tank Sizing & Wind/Seismic Checks</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>AutoCAD drafting of fabrication-ready general arrangement drawings</span></div>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-slate-100 space-y-4">
+              <div class="text-[11px] text-slate-500 font-medium"><strong class="text-slate-800">Target Audience:</strong> Mechanical Design Engineers, Quality Engineers, Project Trainees</div>
+              <button onclick="openQuoteModal('Training: Pressure Vessel & Heat Exchanger Design (ASME / API)')" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
+                <span>Enroll or Inquire</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl border border-slate-200 hover:border-sky-400 p-6 sm:p-8 flex flex-col justify-between transition-all duration-200 shadow-sm hover:shadow-xl hover:-translate-y-1 group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-[11px] font-mono font-bold text-sky-800 uppercase tracking-wider bg-sky-50 px-2.5 py-1 rounded-lg border border-sky-200">Software Academy</span>
+                <div class="flex items-center gap-1.5 text-xs text-amber-700 font-mono font-bold">
+                  <i data-lucide="clock" class="w-3.5 h-3.5"></i> <span>12 - 16 Weeks</span>
+                </div>
+              </div>
+              <h3 class="text-xl font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors mb-3">Full-Stack Web & Mobile App Development Bootcamp</h3>
+              <div class="text-xs text-slate-600 mb-6 flex items-center gap-2 font-mono font-medium">
+                <i data-lucide="book-open" class="w-4 h-4 text-sky-600 shrink-0"></i>
+                <span>Live Coding & Enterprise Project Deployment</span>
+              </div>
+              <div class="space-y-2.5 mb-6">
+                <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-700">Curriculum Highlights:</div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>Frontend: React, TypeScript, Modern Responsive UI with Tailwind</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>Backend: Java & Spring Boot / .NET & C# Enterprise APIs</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>Mobile: Flutter for Android & iOS Production Apps</span></div>
+                <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>Database: SQL (PostgreSQL/MySQL) & MongoDB with Docker & Cloud Deploy</span></div>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-slate-100 space-y-4">
+              <div class="text-[11px] text-slate-500 font-medium"><strong class="text-slate-800">Target Audience:</strong> Computer Science Students, IT Aspirants, Career Switchers</div>
+              <button onclick="openQuoteModal('Training: Full-Stack Web & Mobile App Development Bootcamp')" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
+                <span>Enroll or Inquire</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 p-6 rounded-2xl bg-sky-50/80 border border-sky-200 flex flex-wrap items-center justify-between gap-4 shadow-xs">
+          <div class="flex items-center gap-3">
+            <div class="p-2.5 rounded-xl bg-sky-600 text-white shadow-xs"><i data-lucide="award" class="w-6 h-6"></i></div>
+            <div>
+              <div class="text-sm font-bold text-slate-900">Course Completion Certificate & Placement Guidance</div>
+              <div class="text-xs text-slate-600">Work on live industrial drawings, calculation sheets, and real production repos.</div>
+            </div>
+          </div>
+          <a href="https://wa.me/919876543210?text=Hello,%20I%20am%20interested%20in%20Shree%20Engineers%20training%20programmes" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-sky-700 hover:text-sky-800 underline underline-offset-4">
+            Ask for Training Syllabus on WhatsApp →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 8. WHY CHOOSE SHREE ENGINEERS ==================== -->
+    <section id="why-us" class="py-24 relative bg-slate-50 blueprint-pattern-light border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-bold mb-3 shadow-sm">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span>Unmatched Value Proposition</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Why Choose <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-700">Shree Engineers</span>?
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
+            We provide a unique convergence of heavy industrial design engineering rigor and cutting-edge software development capability under one roof.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 flex flex-col justify-between group hover:-translate-y-1 shadow-sm hover:shadow-lg">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-700 mb-5 group-hover:scale-105 group-hover:bg-sky-100 transition-all shadow-xs">
+                <i data-lucide="sliders" class="w-6 h-6"></i>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">Customized Solutions for Your Business</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">We don't do one-size-fits-all. Every mechanical drawing, equipment calculation, or software architecture is tailored specifically to your exact operational parameters.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+              <span>Pillar #01</span> <span class="text-sky-700 font-bold">100% Guaranteed</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 flex flex-col justify-between group hover:-translate-y-1 shadow-sm hover:shadow-lg">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-700 mb-5 group-hover:scale-105 group-hover:bg-sky-100 transition-all shadow-xs">
+                <i data-lucide="layout" class="w-6 h-6"></i>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">Modern & User-Friendly Applications</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Clean intuitive interfaces, frictionless UX, and ergonomic industrial layouts that enhance employee productivity and client satisfaction.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+              <span>Pillar #02</span> <span class="text-sky-700 font-bold">100% Guaranteed</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 flex flex-col justify-between group hover:-translate-y-1 shadow-sm hover:shadow-lg">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-700 mb-5 group-hover:scale-105 group-hover:bg-sky-100 transition-all shadow-xs">
+                <i data-lucide="trending-up" class="w-6 h-6"></i>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">Scalable and Reliable Technology</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">From equipment that withstands extreme plant pressures to software backends capable of scaling with your organization's exponential growth.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+              <span>Pillar #03</span> <span class="text-sky-700 font-bold">100% Guaranteed</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 flex flex-col justify-between group hover:-translate-y-1 shadow-sm hover:shadow-lg">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-700 mb-5 group-hover:scale-105 group-hover:bg-sky-100 transition-all shadow-xs">
+                <i data-lucide="lock" class="w-6 h-6"></i>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">Secure & Efficient Systems</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Industry-standard safety factors in engineering calculations and zero-trust, encrypted, role-managed architectures in our software deliverables.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+              <span>Pillar #04</span> <span class="text-sky-700 font-bold">100% Guaranteed</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 hover:border-sky-400 transition-all duration-200 flex flex-col justify-between group hover:-translate-y-1 shadow-sm hover:shadow-lg md:col-span-2 lg:col-span-2">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-700 mb-5 group-hover:scale-105 group-hover:bg-sky-100 transition-all shadow-xs">
+                <i data-lucide="life-buoy" class="w-6 h-6"></i>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">End-to-End Digital & Engineering Support</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">From conceptual 3D sketches to shop fabrication, and from system architecture to cloud maintenance — we are your complete lifecycle partner.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+              <span>Pillar #05</span> <span class="text-sky-700 font-bold">100% Guaranteed</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-sky-50 via-white to-blue-50 border border-sky-200 flex flex-col justify-between shadow-md">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 border border-amber-200 flex items-center justify-center text-amber-800 mb-5 shadow-xs">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 mb-2">Have a Complex or Hybrid Requirement?</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Whether you need ASME design calculations or custom ERP automation, our dual-specialized team delivers with speed and precision.</p>
+            </div>
+            <button onclick="openQuoteModal('General Inquiry')" class="mt-6 w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 transition-all transform hover:-translate-y-0.5">
+              Get in Touch Today
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 9. FEATURED PROJECTS PORTFOLIO ==================== -->
+    <section id="portfolio" class="py-24 relative bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-bold mb-3 shadow-sm">
+            <i data-lucide="layers" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span>Proven Track Record</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Featured <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-700">Project Highlights</span>
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
+            Explore our engineering design packages and enterprise software applications delivered for industrial clients.
+          </p>
+        </div>
+
+        <div class="flex items-center justify-center gap-2.5 mb-10">
+          <button data-filter="all" onclick="filterPortfolio('all')" class="portfolio-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-700 border border-slate-200 shadow-xs">
+            All Projects (8)
+          </button>
+          <button data-filter="engineering" onclick="filterPortfolio('engineering')" class="portfolio-filter-btn flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shadow-xs">
+            <i data-lucide="compass" class="w-3.5 h-3.5"></i> <span>CAD & Engineering</span>
+          </button>
+          <button data-filter="software" onclick="filterPortfolio('software')" class="portfolio-filter-btn flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 shadow-xs">
+            <i data-lucide="code-2" class="w-3.5 h-3.5"></i> <span>Software & Portals</span>
+          </button>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="portfolio-card rounded-2xl bg-white border border-slate-200 hover:border-sky-400 p-5 flex flex-col justify-between transition-all duration-200 group hover:-translate-y-1 shadow-xs hover:shadow-md" data-type="engineering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-sky-50 text-sky-800 border-sky-200">ASME Sec VIII Div 1</span>
+                <span class="text-[11px] font-mono text-slate-500 font-medium">Engineering</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-sky-700 transition-colors mb-2">50,000L Chemical Pressure Vessel</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4 font-normal">Complete mechanical design, shell/dished head calculation, saddle support design, and fabrication drawings for a specialty chemical plant.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-[11px] font-mono text-emerald-700 font-bold flex items-center gap-1.5 mb-3">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>Design Pressure: 24 Bar | FEA Verified</span>
+              </div>
+              <button onclick="openQuoteModal('50,000L Chemical Pressure Vessel')" class="w-full py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-sky-700 bg-slate-100 hover:bg-sky-50 border border-slate-200 flex items-center justify-center gap-1 transition-colors">
+                <span>Request Similar Scope</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-card rounded-2xl bg-white border border-slate-200 hover:border-sky-400 p-5 flex flex-col justify-between transition-all duration-200 group hover:-translate-y-1 shadow-xs hover:shadow-md" data-type="engineering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-sky-50 text-sky-800 border-sky-200">TEMA & ASME</span>
+                <span class="text-[11px] font-mono text-slate-500 font-medium">Engineering</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-sky-700 transition-colors mb-2">Shell & Tube Heat Exchanger (TEMA R)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4 font-normal">Thermal and mechanical design of a fixed tube-sheet exchanger for refinery crude preheat train with full tube layout and baffle spacing.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-[11px] font-mono text-emerald-700 font-bold flex items-center gap-1.5 mb-3">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>Heat Duty: 3.5 MW | 620 Tubes</span>
+              </div>
+              <button onclick="openQuoteModal('Shell & Tube Heat Exchanger (TEMA R)')" class="w-full py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-sky-700 bg-slate-100 hover:bg-sky-50 border border-slate-200 flex items-center justify-center gap-1 transition-colors">
+                <span>Request Similar Scope</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-card rounded-2xl bg-white border border-slate-200 hover:border-sky-400 p-5 flex flex-col justify-between transition-all duration-200 group hover:-translate-y-1 shadow-xs hover:shadow-md" data-type="engineering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-sky-50 text-sky-800 border-sky-200">API 650 / Civil</span>
+                <span class="text-[11px] font-mono text-slate-500 font-medium">Engineering</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-sky-700 transition-colors mb-2">API 650 Storage Tank Farm Facility</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4 font-normal">Design and detailing of five 15-meter diameter crude storage tanks including floating roof, annular plates, wind girders, and reinforced ring foundations.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-[11px] font-mono text-emerald-700 font-bold flex items-center gap-1.5 mb-3">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>Capacity: 12,500 m³ | Seismic Verified</span>
+              </div>
+              <button onclick="openQuoteModal('API 650 Storage Tank Farm Facility')" class="w-full py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-sky-700 bg-slate-100 hover:bg-sky-50 border border-slate-200 flex items-center justify-center gap-1 transition-colors">
+                <span>Request Similar Scope</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-card rounded-2xl bg-white border border-slate-200 hover:border-sky-400 p-5 flex flex-col justify-between transition-all duration-200 group hover:-translate-y-1 shadow-xs hover:shadow-md" data-type="engineering">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-sky-50 text-sky-800 border-sky-200">AVEVA E3D</span>
+                <span class="text-[11px] font-mono text-slate-500 font-medium">Engineering</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-sky-700 transition-colors mb-2">E3D Plant Piping & Equipment Layout</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4 font-normal">3D plant piping layout across a 4-tier process skid, generating over 180 isometric drawings with automatic BOM and zero clash clearance.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-[11px] font-mono text-emerald-700 font-bold flex items-center gap-1.5 mb-3">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>180+ Isometrics | CAESAR II Validated</span>
+              </div>
+              <button onclick="openQuoteModal('E3D Plant Piping & Equipment Layout')" class="w-full py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-sky-700 bg-slate-100 hover:bg-sky-50 border border-slate-200 flex items-center justify-center gap-1 transition-colors">
+                <span>Request Similar Scope</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-card rounded-2xl bg-white border border-slate-200 hover:border-amber-400 p-5 flex flex-col justify-between transition-all duration-200 group hover:-translate-y-1 shadow-xs hover:shadow-md" data-type="software">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-800 border-amber-200">React + Spring Boot</span>
+                <span class="text-[11px] font-mono text-slate-500 font-medium">Software</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-amber-700 transition-colors mb-2">Enterprise Manufacturing ERP & Portal</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4 font-normal">Comprehensive ERP software managing job cards, raw material inventory, quality inspection checklists, and customer dispatch invoicing.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-[11px] font-mono text-emerald-700 font-bold flex items-center gap-1.5 mb-3">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>500+ Daily Active Operators</span>
+              </div>
+              <button onclick="openQuoteModal('Enterprise Manufacturing ERP & Portal')" class="w-full py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-amber-700 bg-slate-100 hover:bg-amber-50 border border-slate-200 flex items-center justify-center gap-1 transition-colors">
+                <span>Request Similar Scope</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-card rounded-2xl bg-white border border-slate-200 hover:border-amber-400 p-5 flex flex-col justify-between transition-all duration-200 group hover:-translate-y-1 shadow-xs hover:shadow-md" data-type="software">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-800 border-amber-200">Flutter + Offline Sync</span>
+                <span class="text-[11px] font-mono text-slate-500 font-medium">Software</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-amber-700 transition-colors mb-2">Mobile Field Inspection App (Flutter)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4 font-normal">Cross-platform mobile tool enabling field quality inspectors to log weld inspections, upload thickness gauge photos, and sync offline data.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-[11px] font-mono text-emerald-700 font-bold flex items-center gap-1.5 mb-3">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>Android & iOS | Real-time GPS</span>
+              </div>
+              <button onclick="openQuoteModal('Mobile Field Inspection App (Flutter)')" class="w-full py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-amber-700 bg-slate-100 hover:bg-amber-50 border border-slate-200 flex items-center justify-center gap-1 transition-colors">
+                <span>Request Similar Scope</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-card rounded-2xl bg-white border border-slate-200 hover:border-amber-400 p-5 flex flex-col justify-between transition-all duration-200 group hover:-translate-y-1 shadow-xs hover:shadow-md" data-type="software">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-800 border-amber-200">React + TypeScript</span>
+                <span class="text-[11px] font-mono text-slate-500 font-medium">Software</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-amber-700 transition-colors mb-2">Interactive Analytics Dashboard</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4 font-normal">Live IoT and manual shop-floor dashboard reporting OEE (Overall Equipment Effectiveness), downtime breakdown, and automated daily email digests.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-[11px] font-mono text-emerald-700 font-bold flex items-center gap-1.5 mb-3">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>Sub-second Query Latency</span>
+              </div>
+              <button onclick="openQuoteModal('Interactive Analytics & Production Dashboard')" class="w-full py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-amber-700 bg-slate-100 hover:bg-amber-50 border border-slate-200 flex items-center justify-center gap-1 transition-colors">
+                <span>Request Similar Scope</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-card rounded-2xl bg-white border border-slate-200 hover:border-amber-400 p-5 flex flex-col justify-between transition-all duration-200 group hover:-translate-y-1 shadow-xs hover:shadow-md" data-type="software">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-800 border-amber-200">Full-Stack + Payments</span>
+                <span class="text-[11px] font-mono text-slate-500 font-medium">Software</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 group-hover:text-amber-700 transition-colors mb-2">B2B Industrial Spares E-Commerce</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4 font-normal">High-volume wholesale ordering platform featuring dynamic price tiers, GST invoicing, order tracking, and integrated ERP synchronization.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-[11px] font-mono text-emerald-700 font-bold flex items-center gap-1.5 mb-3">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>Multi-vendor Catalog | Auto PO</span>
+              </div>
+              <button onclick="openQuoteModal('B2B Industrial Spares E-Commerce Platform')" class="w-full py-2 rounded-lg text-xs font-bold text-slate-700 hover:text-amber-700 bg-slate-100 hover:bg-amber-50 border border-slate-200 flex items-center justify-center gap-1 transition-colors">
+                <span>Request Similar Scope</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 10. CONTACT SECTION & FAQS ==================== -->
+    <section id="contact" class="py-24 relative bg-slate-50 blueprint-pattern-light border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-bold mb-3 shadow-sm">
+            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span>Connect with Shree Engineers</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Start Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-700">Engineering or Digital</span> Project
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
+            Have a project in mind, need drawing verification, or want to discuss enterprise software development? We are ready to help.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-10 items-start mb-20">
+          
+          <!-- Contact Details Cards -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all shadow-xs flex items-start gap-4">
+              <div class="p-3 rounded-xl bg-sky-50 text-sky-600 shrink-0 border border-sky-100"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Corporate Head Office</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">Shree Engineers Industrial & Technology Complex,<br>Industrial Area, Phase II, Pune / Navi Mumbai, Maharashtra, India.</p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all shadow-xs flex items-start gap-4">
+              <div class="p-3 rounded-xl bg-blue-50 text-blue-600 shrink-0 border border-blue-100"><i data-lucide="phone-call" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Direct Lines & Inquiries</h4>
+                <p class="text-xs text-slate-600">
+                  Engineering Desk: <a href="tel:+919876543210" class="text-sky-700 font-semibold hover:underline">+91 98765 43210</a><br>
+                  Software Solutions: <a href="tel:+919876543211" class="text-sky-700 font-semibold hover:underline">+91 98765 43211</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all shadow-xs flex items-start gap-4">
+              <div class="p-3 rounded-xl bg-amber-50 text-amber-700 shrink-0 border border-amber-100"><i data-lucide="mail" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Electronic Mail</h4>
+                <p class="text-xs text-slate-600">
+                  General: <a href="mailto:info@shreeengineers.com" class="text-amber-700 font-semibold hover:underline">info@shreeengineers.com</a><br>
+                  RFQs & Proposals: <a href="mailto:projects@shreeengineers.com" class="text-amber-700 font-semibold hover:underline">projects@shreeengineers.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400 transition-all shadow-xs flex items-start gap-4">
+              <div class="p-3 rounded-xl bg-emerald-50 text-emerald-700 shrink-0 border border-emerald-100"><i data-lucide="message-square" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Instant WhatsApp Support</h4>
+                <p class="text-xs text-slate-600 mb-2">Immediate responses for drawing reviews, software demos, and training inquiries.</p>
+                <a href="https://wa.me/919876543210?text=Hello%20Shree%20Engineers,%20I%20have%20an%20inquiry" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-800">
+                  <span>Chat on WhatsApp Now</span> <span>→</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-xl">
+            <div id="contact-form-container">
+              <h3 class="text-lg font-extrabold text-slate-900 mb-1">Send a Direct Message</h3>
+              <p class="text-xs text-slate-500 mb-4">Please outline your engineering or software requirements and our technical team will respond with a preliminary proposal.</p>
+
+              <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Your Name *</label>
+                    <input type="text" required placeholder="e.g. Anand Deshmukh" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Email Address *</label>
+                    <input type="email" required placeholder="anand@company.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Phone Number *</label>
+                    <input type="tel" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Subject / Project Type</label>
+                    <input type="text" placeholder="e.g. API 650 Storage Tank Calculation" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">Project Message & Specifications *</label>
+                  <textarea rows="4" required placeholder="Describe your design parameters, drawings needed, or software functionality requirements..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-700 hover:from-sky-700 hover:to-indigo-800 shadow-md shadow-sky-600/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Transmit Inquiry</span>
+                </button>
+              </form>
+            </div>
+
+            <!-- Success State -->
+            <div id="contact-success-container" class="hidden text-center py-12 space-y-4">
+              <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 mx-auto flex items-center justify-center border border-emerald-200">
+                <i data-lucide="check-circle" class="w-7 h-7"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Message Sent Successfully!</h3>
+              <p class="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto">Thank you for reaching out. A senior representative from Shree Engineers will contact you promptly.</p>
+              <button onclick="resetContactForm()" class="mt-4 px-5 py-2.5 rounded-xl text-xs font-bold text-sky-700 bg-sky-50 border border-sky-200 hover:bg-sky-100">
+                Send Another Inquiry
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FAQs Accordion -->
+        <div class="max-w-4xl mx-auto pt-6 border-t border-slate-200">
+          <div class="text-center mb-8">
+            <h3 class="text-xl font-bold text-slate-900 flex items-center justify-center gap-2">
+              <i data-lucide="help-circle" class="w-5 h-5 text-sky-600"></i>
+              Frequently Asked Questions
+            </h3>
+            <p class="text-xs text-slate-500 mt-1">Common queries regarding our engineering deliverables, standards, and software engagements.</p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="faq-item rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xs transition-all">
+              <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between text-xs sm:text-sm font-bold text-slate-900 hover:text-sky-700 transition-colors">
+                <span>What international design codes do you follow for mechanical equipment?</span>
+                <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-sky-600 transition-transform"></i>
+              </button>
+              <div class="faq-answer px-4 sm:px-5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <div class="pb-4 pt-1 border-t border-slate-100">
+                  For pressure vessels, we design in accordance with ASME Section VIII Division 1 & 2. For heat exchangers, we follow TEMA (Class R, C, B) and ASME. For atmospheric & low-pressure storage tanks, we engineer according to API 650 and API 620 standards.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xs transition-all">
+              <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between text-xs sm:text-sm font-bold text-slate-900 hover:text-sky-700 transition-colors">
+                <span>Can you provide end-to-end software development including cloud hosting?</span>
+                <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-sky-600 transition-transform"></i>
+              </button>
+              <div class="faq-answer px-4 sm:px-5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <div class="pb-4 pt-1 border-t border-slate-100">
+                  Yes! We build web apps in React/TypeScript, backends in Java/Spring Boot and .NET/C#, and cross-platform mobile apps using Flutter. We also manage cloud deployments on AWS/Azure, set up automated CI/CD pipelines, and provide post-launch maintenance.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xs transition-all">
+              <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between text-xs sm:text-sm font-bold text-slate-900 hover:text-sky-700 transition-colors">
+                <span>What are the deliverables for piping and E3D design projects?</span>
+                <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-sky-600 transition-transform"></i>
+              </button>
+              <div class="faq-answer px-4 sm:px-5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <div class="pb-4 pt-1 border-t border-slate-100">
+                  Our deliverables include complete intelligent 3D models in AVEVA E3D, equipment layouts, piping general arrangements (GA), isometric drawings with comprehensive Bills of Materials (BOM/MTO), and CAESAR II piping stress analysis reports.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xs transition-all">
+              <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between text-xs sm:text-sm font-bold text-slate-900 hover:text-sky-700 transition-colors">
+                <span>Are the training programmes suitable for working professionals?</span>
+                <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-sky-600 transition-transform"></i>
+              </button>
+              <div class="faq-answer px-4 sm:px-5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <div class="pb-4 pt-1 border-t border-slate-100">
+                  Yes, we offer both weekday intensive tracks and flexible weekend batches for working engineers looking to master AVEVA E3D, ASME calculations, or modern Full-Stack development with real industrial projects.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 11. FOOTER ==================== -->
+  <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a href="#home" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-500 via-blue-600 to-amber-500 p-0.5 shadow-md shadow-sky-500/20">
+              <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                <i data-lucide="compass" class="w-5 h-5 text-sky-400"></i>
+              </div>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-white font-sans">
+              SHREE <span class="text-sky-400">ENGINEERS</span>
+            </span>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Shree Engineers is a premier multidisciplinary firm specializing in precision CAD drafting, ASME/API process equipment design, AVEVA E3D piping layouts, enterprise software architectures, and industrial professional training.
+          </p>
+          <div class="pt-2 flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-[11px] font-mono text-sky-300">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+              ASME • API • TEMA • ISO
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-[11px] font-mono text-amber-300">
+              React • Spring • Flutter
+            </span>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold">Engineering Design</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#engineering-services" class="hover:text-sky-400 transition-colors">AutoCAD 2D & 3D Drafting</a></li>
+            <li><a href="#engineering-services" class="hover:text-sky-400 transition-colors">Pressure Vessels (ASME Sec VIII)</a></li>
+            <li><a href="#engineering-services" class="hover:text-sky-400 transition-colors">Heat Exchangers (TEMA / ASME)</a></li>
+            <li><a href="#engineering-services" class="hover:text-sky-400 transition-colors">Storage Tanks (API 650 / 620)</a></li>
+            <li><a href="#engineering-services" class="hover:text-sky-400 transition-colors">Machine & Component Design</a></li>
+            <li><a href="#engineering-services" class="hover:text-sky-400 transition-colors">Civil & Structural Design</a></li>
+            <li><a href="#engineering-services" class="hover:text-sky-400 transition-colors">Piping Works & AVEVA E3D</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold">Software & Digital</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#software-services" class="hover:text-amber-400 transition-colors">Web Applications & Portals</a></li>
+            <li><a href="#software-services" class="hover:text-amber-400 transition-colors">Admin Panels & CRM</a></li>
+            <li><a href="#software-services" class="hover:text-amber-400 transition-colors">ERP & Business Management</a></li>
+            <li><a href="#software-services" class="hover:text-amber-400 transition-colors">Flutter Mobile Apps (iOS/Android)</a></li>
+            <li><a href="#software-services" class="hover:text-amber-400 transition-colors">Secure RBAC & Cloud Ops</a></li>
+            <li><a href="#software-services" class="hover:text-amber-400 transition-colors">E-Commerce & Marketplaces</a></li>
+            <li><a href="#training" class="hover:text-amber-400 transition-colors">Industrial Training Academy</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold">Inquiries & RFQs</h4>
+          <div class="space-y-2 text-xs">
+            <div class="flex items-center gap-2 text-slate-300">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-sky-400"></i>
+              <span>+91 98765 43210</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-300">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>info@shreeengineers.com</span>
+            </div>
+            <div class="flex items-start gap-2 text-slate-400 text-[11px] pt-1">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-sky-400 shrink-0 mt-0.5"></i>
+              <span>Industrial Complex, Phase II, Pune / Navi Mumbai, MH</span>
+            </div>
+          </div>
+          <button onclick="openQuoteModal()" class="mt-3 w-full py-2.5 px-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 shadow-sm">
+            Request Quick Quote
+          </button>
+        </div>
+
+      </div>
+
+      <div class="mt-14 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>© 2026 Shree Engineers. All Rights Reserved. Engineered for Precision.</div>
+        <div class="flex items-center gap-4">
+          <button onclick="scrollToTop()" class="flex items-center gap-1 text-slate-400 hover:text-sky-400 transition-colors">
+            <span>Back to top</span> <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 12. INTERACTIVE QUOTE MODAL ==================== -->
+  <div id="quote-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs">
+    <div class="modal-content relative w-full max-w-2xl bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-y-auto max-h-[90vh]">
+      <button onclick="closeQuoteModal()" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-colors" aria-label="Close modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Form View -->
+      <div id="modal-form-view">
+        <div class="mb-6">
+          <span class="text-xs font-mono font-bold uppercase tracking-wider text-sky-800 bg-sky-50 px-2.5 py-1 rounded-md border border-sky-200">
+            Request a Custom Quote
+          </span>
+          <h3 class="text-2xl font-extrabold text-slate-900 mt-2">Let's Build or Design Your Project</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">Fill out the specifications below or reach out instantly via WhatsApp.</p>
+        </div>
+
+        <form onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Your Full Name *</label>
+              <input id="modal-name" type="text" required placeholder="e.g. Rajesh Kumar" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Business Email *</label>
+              <input id="modal-email" type="email" required placeholder="name@company.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Phone / WhatsApp Number *</label>
+              <input id="modal-phone" type="tel" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Expected Timeline</label>
+              <select id="modal-timeline" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+                <option>Immediate (Within 1-2 weeks)</option>
+                <option>Standard (1-2 months)</option>
+                <option>Long-term project (3+ months)</option>
+                <option>Training batch enrollment</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">Select Primary Service / Vertical</label>
+            <select id="modal-service-select" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+              <optgroup label="Heavy Engineering & CAD">
+                <option>AutoCAD 2D & 3D Design</option>
+                <option>Pressure Vessel Design (ASME Sec VIII)</option>
+                <option>Heat Exchanger [Shell & Tube - TEMA]</option>
+                <option>Storage Tank (API 650 / 620)</option>
+                <option>Mechanical Machine & Component Design</option>
+                <option>Civil & Structural Design (AISC / IS 800)</option>
+                <option>Piping Design & AVEVA E3D Plant Works</option>
+              </optgroup>
+              <optgroup label="Software & Digital Solutions">
+                <option>Web Applications & Business Portals</option>
+                <option>Admin Panels & CRM Systems</option>
+                <option>ERP & Business Management Software</option>
+                <option>Android & iOS Mobile Applications (Flutter)</option>
+                <option>E-commerce Websites & Online Platforms</option>
+                <option>Interactive Dashboards & Analytics</option>
+                <option>REST APIs & System Integration</option>
+                <option>Database Design & Cloud Deployment</option>
+              </optgroup>
+              <optgroup label="Training Programmes">
+                <option>Piping Design & E3D Industrial Training</option>
+                <option>Pressure Vessel & Heat Exchanger Course</option>
+                <option>Full-Stack Web & Mobile Bootcamp</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">Project Scope or Requirements Details</label>
+            <textarea id="modal-notes" rows="3" placeholder="Provide any details like design code, operating pressure, volume, features needed, or software functionality..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors"></textarea>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row items-center gap-3">
+            <button type="submit" class="w-full sm:flex-1 py-3 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-700 hover:from-sky-700 hover:to-indigo-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i> <span>Submit Quotation Request</span>
+            </button>
+            <button type="button" onclick="sendWhatsAppFromModal()" class="w-full sm:w-auto px-5 py-3 rounded-xl font-bold text-xs text-emerald-800 bg-emerald-50 border border-emerald-300 hover:bg-emerald-100 flex items-center justify-center gap-2">
+              <i data-lucide="message-square" class="w-4 h-4"></i> <span>Send via WhatsApp</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success View -->
+      <div id="modal-success-view" class="hidden text-center py-12 space-y-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-700 mx-auto flex items-center justify-center">
+          <i data-lucide="check-circle" class="w-8 h-8"></i>
+        </div>
+        <h3 class="text-2xl font-extrabold text-slate-900">Quotation Request Received!</h3>
+        <p class="text-sm text-slate-600 max-w-md mx-auto">
+          Thank you, <strong id="success-client-name" class="text-sky-700">Valued Client</strong>. Our engineering and digital solution leads will review your specifications and contact you within 24 hours.
+        </p>
+        <div class="pt-4 flex flex-wrap justify-center gap-3">
+          <button onclick="sendWhatsAppFromModal()" class="px-5 py-2.5 rounded-xl text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-300 hover:bg-emerald-100 flex items-center gap-2">
+            <i data-lucide="message-square" class="w-4 h-4"></i> Also send via WhatsApp for priority
+          </button>
+          <button onclick="closeQuoteModal()" class="px-5 py-2.5 rounded-xl text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200">
+            Close
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== 13. FLOATING WHATSAPP BUTTON ==================== -->
+  <aside aria-label="Floating WhatsApp Inquiry" class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+    <a href="https://wa.me/919876543210?text=Hello%20Shree%20Engineers,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="p-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-xl hover:shadow-emerald-600/40 hover:scale-105 transition-all flex items-center justify-center group" title="Chat with Shree Engineers on WhatsApp">
+      <i data-lucide="message-square" class="w-6 h-6 fill-current"></i>
+      <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold px-0 group-hover:px-2">
+        WhatsApp Inquiry
+      </span>
+    </a>
+  </aside>
+
+  <!-- Custom Script Logic -->
+  <script src="./script.js"></script>
+</body>
+</html>
