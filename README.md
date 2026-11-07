@@ -68,11 +68,16 @@ Then navigate to `http://localhost:8000` in your browser.
 ## 📁 Repository Structure
 
 ```text
-├── index.html     # Main standalone website markup
-├── style.css      # Custom styling, blueprint grids, and animation keyframes
-├── script.js      # Dynamic tab switching, filters, and quotation form handling
-├── .gitignore     # Git ignore configuration
-└── README.md      # Project overview and documentation
+├── assets/
+│   ├── logo-icon.png  # Square emblem mark for favicon & badges
+│   ├── logo.png       # Transparent full brand logo
+│   ├── logo.jpg       # High-res cropped brand logo
+│   └── logo-full.jpg  # Original high-res source logo
+├── index.html         # Main standalone website markup
+├── style.css          # Custom styling, blueprint grids, and animation keyframes
+├── script.js          # Dynamic tab switching, filters, and quotation form handling
+├── .gitignore         # Git ignore configuration
+└── README.md          # Project overview and documentation
 ```
 
 ---
