@@ -5,6 +5,8 @@ const engineeringData = {
   "autocad-2d-3d": {
     badge: "Core Engineering",
     title: "AutoCAD 2D & 3D Design",
+    brochure: "docs/shree-engineers-autocad-brochure.pdf",
+    brochureName: "AutoCAD 2D & 3D Brochure",
     desc: "We provide comprehensive 2D drafting and 3D modeling solutions following ISO, DIN, and ASME drafting standards. From conceptual sketches to fabrication-ready shop drawings, our models ensure seamless manufacturing integration and zero clash tolerance.",
     subcategories: null,
     highlights: [
@@ -20,22 +22,27 @@ const engineeringData = {
   "mechanical-equipment": {
     badge: "Industrial Equipment",
     title: "Mechanical Equipment Design",
+    brochure: "docs/02-pressure-vessel-design.pdf",
+    brochureName: "Pressure Vessel & Equipment Brochure",
     desc: "Specialized engineering design calculations, FEA verification, and detailing for static process plant equipment, catering to oil & gas, chemical, petrochemical, and power generation industries.",
     subcategories: [
       {
         name: "Pressure Vessels",
         code: "ASME Sec VIII Div 1 & 2",
-        detail: "Internal/external pressure calculations, nozzle reinforcement, saddle & skirt support design, hydro-test analysis."
+        detail: "Internal/external pressure calculations, nozzle reinforcement, saddle & skirt support design, hydro-test analysis.",
+        brochure: "docs/02-pressure-vessel-design.pdf"
       },
       {
         name: "Heat Exchangers [Shell & Tube]",
         code: "TEMA & ASME Sec VIII",
-        detail: "Thermal rating, tube-sheet thickness, baffle spacing, floating head / fixed tube-sheet mechanical engineering."
+        detail: "Thermal rating, tube-sheet thickness, baffle spacing, floating head / fixed tube-sheet mechanical engineering.",
+        brochure: "docs/03-heat-exchanger-design.pdf"
       },
       {
         name: "Storage Tanks",
         code: "API 650 & API 620",
-        detail: "Atmospheric & low-pressure storage tank design, shell thickness computation, cone/floating roof, wind girder & seismic load verification."
+        detail: "Atmospheric & low-pressure storage tank design, shell thickness computation, cone/floating roof, wind girder & seismic load verification.",
+        brochure: "docs/04-api-650-storage-tank-design.pdf"
       }
     ],
     highlights: [
@@ -50,6 +57,8 @@ const engineeringData = {
   "machine-compound-design": {
     badge: "Custom Machinery",
     title: "Mechanical Machine & Component Design",
+    brochure: "docs/07-mechanical-machine-design.pdf",
+    brochureName: "Machine & Component Design Brochure",
     desc: "We turn complex mechanical requirements into operational reality. From custom automation machinery, conveyor systems, and hydraulic/pneumatic test rigs to compound mechanical assemblies, we handle kinematics, stress distribution, and component life calculations.",
     subcategories: null,
     highlights: [
@@ -65,6 +74,8 @@ const engineeringData = {
   "civil-structural-design": {
     badge: "Structural Integrity",
     title: "Civil & Structural Design",
+    brochure: "docs/06-civil-structural-engineering.pdf",
+    brochureName: "Civil & Structural Design Brochure",
     desc: "Specialized in structural design for industrial plant buildings, equipment support structures, pipe racks, platform stairways, and foundations. Engineered to withstand heavy dead loads, dynamic operating machinery, wind, and seismic conditions.",
     subcategories: null,
     highlights: [
@@ -80,6 +91,8 @@ const engineeringData = {
   "piping-e3d-works": {
     badge: "3D Plant Piping",
     title: "Piping Design Works & AVEVA E3D",
+    brochure: "docs/05-aveva-e3d-plant-design.pdf",
+    brochureName: "AVEVA E3D Plant Piping Brochure",
     desc: "Delivering end-to-end piping engineering using industry gold-standard tools like AVEVA E3D / PDMS and AutoCAD Plant 3D. We engineer clash-free plant layouts, plot plans, piping isometrics with full BOM, and thermal stress calculations.",
     subcategories: null,
     highlights: [
@@ -123,10 +136,20 @@ function selectEngineeringTab(serviceKey) {
     `;
     data.subcategories.forEach(sub => {
       subHtml += `
-        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-sky-50/50 transition-all">
-          <div class="text-sm font-bold text-slate-900 mb-1">${sub.name}</div>
-          <div class="text-[10px] font-mono font-bold text-amber-700 mb-1.5">${sub.code}</div>
-          <div class="text-xs text-slate-600 leading-snug">${sub.detail}</div>
+        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 hover:border-sky-400 hover:bg-sky-50/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="text-sm font-bold text-slate-900 mb-1">${sub.name}</div>
+            <div class="text-[10px] font-mono font-bold text-amber-700 mb-1.5">${sub.code}</div>
+            <div class="text-xs text-slate-600 leading-snug">${sub.detail}</div>
+          </div>
+          ${sub.brochure ? `
+            <div class="pt-2 mt-2 border-t border-slate-200/80">
+              <a href="${sub.brochure}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-[11px] font-bold text-sky-700 hover:text-sky-900 bg-white hover:bg-sky-100 px-2.5 py-1 rounded-lg border border-sky-200 shadow-xs transition-colors">
+                <i data-lucide="file-text" class="w-3 h-3 text-sky-600"></i>
+                <span>View Brochure</span>
+              </a>
+            </div>
+          ` : ''}
         </div>
       `;
     });
@@ -171,6 +194,21 @@ function selectEngineeringTab(serviceKey) {
     `;
   });
   delContainer.innerHTML = delHtml;
+
+  // Render Service Brochure Button if available
+  const brochureContainer = document.getElementById('eng-brochure-container');
+  if (brochureContainer) {
+    if (data.brochure) {
+      brochureContainer.innerHTML = `
+        <a href="${data.brochure}" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm text-sky-800 bg-white hover:bg-sky-50 border border-sky-300 hover:border-sky-500 shadow-xs flex items-center justify-center gap-2 transition-all mb-2.5" title="View Technical Brochure (PDF)">
+          <i data-lucide="file-text" class="w-4 h-4 text-sky-600"></i>
+          <span>View Brochure / More Details (PDF)</span>
+        </a>
+      `;
+    } else {
+      brochureContainer.innerHTML = '';
+    }
+  }
 
   // Update CTA button
   const ctaBtn = document.getElementById('eng-inquire-btn');
@@ -266,7 +304,7 @@ function sendWhatsAppFromModal() {
   const notes = document.getElementById('modal-notes').value || 'Interested in quotation';
 
   const text = `*New Inquiry - Shree Engineers*%0A*Name:* ${encodeURIComponent(name)}%0A*Service:* ${encodeURIComponent(service)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Timeline:* ${encodeURIComponent(timeline)}%0A*Details:* ${encodeURIComponent(notes)}`;
-  window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+  window.open(`https://wa.me/918976600537?text=${text}`, '_blank');
 }
 
 // --- 5. Contact Form Handler ---

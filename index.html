@@ -86,8 +86,12 @@
         </nav>
 
         <!-- Quick Actions & CTA -->
-        <div class="hidden lg:flex items-center gap-3">
-          <a href="https://wa.me/919876543210?text=Hello%20Shree%20Engineers,%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-300 hover:bg-emerald-100 transition-all" title="Chat on WhatsApp">
+        <div class="hidden lg:flex items-center gap-2.5">
+          <a href="docs/shree-engineers-autocad-brochure.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-sky-800 bg-sky-50 border border-sky-200 hover:bg-sky-100 transition-all" title="View Corporate Brochure (PDF)">
+            <i data-lucide="file-text" class="w-3.5 h-3.5 text-sky-600"></i>
+            <span>Brochure</span>
+          </a>
+          <a href="https://wa.me/918976600537?text=Hello%20Shree%20Engineers,%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-300 hover:bg-emerald-100 transition-all" title="Chat on WhatsApp">
             <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
             <span>WhatsApp</span>
           </a>
@@ -122,12 +126,16 @@
         <a href="#portfolio" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-slate-100 text-sm font-semibold">Featured Projects</a>
         <a href="#contact" onclick="toggleMobileMenu()" class="px-3 py-2 rounded-lg text-slate-800 hover:bg-slate-100 text-sm font-semibold">Contact Us</a>
         <div class="pt-4 border-t border-slate-200 flex flex-col gap-2">
+          <a href="docs/shree-engineers-autocad-brochure.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl text-center text-xs font-bold text-sky-800 bg-sky-50 border border-sky-300 flex items-center justify-center gap-2">
+            <i data-lucide="file-text" class="w-4 h-4 text-sky-600"></i>
+            <span>View Corporate Brochure (PDF)</span>
+          </a>
           <button onclick="toggleMobileMenu(); openQuoteModal();" class="w-full py-3 rounded-xl text-center text-sm font-bold text-white bg-gradient-to-r from-sky-600 to-blue-700 shadow-md shadow-sky-600/20">
             Request a Quote
           </button>
-          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl text-center text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-300 flex items-center justify-center gap-2">
+          <a href="https://wa.me/918976600537" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl text-center text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-300 flex items-center justify-center gap-2">
             <i data-lucide="message-square" class="w-4 h-4"></i>
-            Chat on WhatsApp (+91 98765 43210)
+            Chat on WhatsApp (+91 8976600537)
           </a>
         </div>
       </div>
@@ -176,14 +184,19 @@
               </span>
             </div>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+            <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-3">
               <button onclick="openQuoteModal()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-sky-600 via-blue-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-lg shadow-sky-600/25 hover:shadow-sky-600/40 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 group">
                 <span>Request Custom Quote</span>
                 <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
               </button>
 
+              <a href="docs/shree-engineers-autocad-brochure.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-bold text-sm text-sky-800 bg-sky-50 hover:bg-sky-100 border border-sky-300 shadow-sm transition-all flex items-center justify-center gap-2 group" title="Open AutoCAD 2D & 3D Corporate Brochure (PDF)">
+                <i data-lucide="file-text" class="w-4 h-4 text-sky-600 group-hover:scale-110 transition-transform"></i>
+                <span>View Brochure (PDF)</span>
+              </a>
+
               <a href="#engineering-services" class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-bold text-sm text-slate-700 bg-white hover:bg-slate-50 border border-slate-300 hover:border-sky-500 shadow-sm transition-all flex items-center justify-center gap-2">
-                <span>Explore Engineering Services</span>
+                <span>Explore Services</span>
               </a>
             </div>
           </div>
@@ -408,10 +421,11 @@
                 </div>
               </div>
 
-              <div class="pt-4 border-t border-slate-200 space-y-3">
+              <div class="pt-4 border-t border-slate-200 space-y-2.5">
                 <div class="text-xs text-slate-600 font-medium">
                   Ready to calculate, draft, or model your next mechanical asset?
                 </div>
+                <div id="eng-brochure-container"></div>
                 <button id="eng-inquire-btn" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
                   <span class="eng-btn-text">Inquire for AutoCAD 2D & 3D Design</span>
                   <i data-lucide="arrow-right" class="w-4 h-4"></i>
@@ -453,9 +467,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">Web Applications & Business Portals</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Custom, cloud-native web portals and SaaS platforms built with high-velocity frameworks for exceptional reliability and responsiveness.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('Web Applications & Business Portals')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/08-website-web-application-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('Web Applications & Business Portals')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -468,9 +485,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">Admin Panels & CRM Systems</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Centralized client management, sales pipelines, task tracking, and role-governed admin interfaces to streamline enterprise workflows.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('Admin Panels & CRM Systems')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/09-admin-panel-crm-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('Admin Panels & CRM Systems')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -483,9 +503,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">ERP & Business Management Software</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Integrated ERP systems orchestrating inventory, procurement, billing, production scheduling, and vendor relationships.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('ERP & Business Management Software')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/10-erp-software-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('ERP & Business Management Software')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -498,9 +521,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">Android & iOS Mobile Applications</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Cross-platform mobile apps built with Flutter, ensuring fluid 60FPS UI, offline capability, and native OS integrations.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('Android & iOS Mobile Applications')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/11-android-ios-mobile-app-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('Android & iOS Mobile Applications')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -513,9 +539,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">Secure Login, User Roles & Permissions</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Enterprise-grade authentication with JWT/OAuth2, multi-factor authentication (MFA), and fine-grained Role-Based Access Control (RBAC).</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('Secure Login, User Roles & Permissions')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/10-erp-software-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('Secure Login, User Roles & Permissions')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -528,9 +557,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">E-Commerce Websites & Online Platforms</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Scalable B2B & B2C e-commerce portals equipped with secure payment gateways, inventory sync, and intelligent order tracking.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('E-Commerce Websites & Online Platforms')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/12-ecommerce-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('E-Commerce Websites & Online Platforms')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -543,9 +575,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">Interactive Dashboards & Reporting Systems</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Live analytics dashboards, scheduled automated report generation, and data visualization engines for strategic decision-making.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('Interactive Dashboards & Reporting Systems')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/09-admin-panel-crm-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('Interactive Dashboards & Reporting Systems')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -558,9 +593,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">REST APIs & Third-Party Integrations</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Robust REST & GraphQL microservices integrating payment gateways, SMS/Email services, ERPs, and legacy enterprise software.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('REST APIs & Third-Party Integrations')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/14-database-backend-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('REST APIs & Third-Party Integrations')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -573,9 +611,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">Cloud Hosting, Deployment & Maintenance</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Automated CI/CD pipelines, containerized Docker deployments, AWS/Azure setup, monitoring, and 99.9% uptime maintenance.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('Cloud Hosting, Deployment & Maintenance')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/13-cloud-hosting-deployment.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('Cloud Hosting, Deployment & Maintenance')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -588,9 +629,12 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">Database Design & Backend Development</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">High-performance data architecture using PostgreSQL, MySQL, and MongoDB with indexing, replication, and query optimization.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('Database Design & Backend Development')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/14-database-backend-development.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('Database Design & Backend Development')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
           </div>
 
@@ -603,10 +647,14 @@
               <h3 class="text-lg font-bold text-slate-900 mb-2">Workflow Automation & Custom Business Solutions</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">Eliminate repetitive operations with tailored digital workflows, approval triggers, document parsing, and business logic automation.</p>
             </div>
-            <div class="pt-4 mt-4 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-[11px] font-mono font-medium text-slate-500">Enterprise Ready</span>
-              <button onclick="openQuoteModal('Workflow Automation & Custom Business Solutions')" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <div class="pt-4 mt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+              <a href="docs/15-workflow-automation.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 px-2.5 py-1.5 rounded-lg border border-amber-200 transition-colors" title="Open Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>View Brochure</span>
+              </a>
+              <button onclick="openQuoteModal('Workflow Automation & Custom Business Solutions')" class="text-xs font-bold text-slate-700 hover:text-sky-700 flex items-center gap-1 ml-auto"><span>Inquire</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
             </div>
+          </div>
           </div>
 
         </div>
@@ -914,8 +962,12 @@
                 <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>Industry-standard project portfolio creation</span></div>
               </div>
             </div>
-            <div class="pt-6 border-t border-slate-100 space-y-4">
+            <div class="pt-6 border-t border-slate-100 space-y-3">
               <div class="text-[11px] text-slate-500 font-medium"><strong class="text-slate-800">Target Audience:</strong> Mechanical & Chemical Engineers, Diploma Holders, CAD Draftsmen</div>
+              <a href="docs/16-aveva-e3d-industrial-piping-training.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl font-bold text-xs text-sky-800 bg-sky-50 hover:bg-sky-100 border border-sky-300 flex items-center justify-center gap-2 transition-colors" title="View Piping Training Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-sky-600"></i>
+                <span>View Course Brochure (PDF)</span>
+              </a>
               <button onclick="openQuoteModal('Training: Industrial Piping & E3D Plant Design Training')" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
                 <span>Enroll or Inquire</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
@@ -943,8 +995,12 @@
                 <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>AutoCAD drafting of fabrication-ready general arrangement drawings</span></div>
               </div>
             </div>
-            <div class="pt-6 border-t border-slate-100 space-y-4">
+            <div class="pt-6 border-t border-slate-100 space-y-3">
               <div class="text-[11px] text-slate-500 font-medium"><strong class="text-slate-800">Target Audience:</strong> Mechanical Design Engineers, Quality Engineers, Project Trainees</div>
+              <a href="docs/17-pressure-vessel-heat-exchanger-training.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl font-bold text-xs text-sky-800 bg-sky-50 hover:bg-sky-100 border border-sky-300 flex items-center justify-center gap-2 transition-colors" title="View Equipment Training Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-sky-600"></i>
+                <span>View Course Brochure (PDF)</span>
+              </a>
               <button onclick="openQuoteModal('Training: Pressure Vessel & Heat Exchanger Design (ASME / API)')" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
                 <span>Enroll or Inquire</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
@@ -972,8 +1028,12 @@
                 <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 font-medium"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i><span>Database: SQL (PostgreSQL/MySQL) & MongoDB with Docker & Cloud Deploy</span></div>
               </div>
             </div>
-            <div class="pt-6 border-t border-slate-100 space-y-4">
+            <div class="pt-6 border-t border-slate-100 space-y-3">
               <div class="text-[11px] text-slate-500 font-medium"><strong class="text-slate-800">Target Audience:</strong> Computer Science Students, IT Aspirants, Career Switchers</div>
+              <a href="docs/18-full-stack-web-mobile-development-training.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl font-bold text-xs text-sky-800 bg-sky-50 hover:bg-sky-100 border border-sky-300 flex items-center justify-center gap-2 transition-colors" title="View Full Stack Bootcamp Brochure (PDF)">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 text-sky-600"></i>
+                <span>View Course Brochure (PDF)</span>
+              </a>
               <button onclick="openQuoteModal('Training: Full-Stack Web & Mobile App Development Bootcamp')" class="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-sky-600 to-blue-700 hover:from-sky-700 hover:to-blue-800 shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
                 <span>Enroll or Inquire</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
@@ -990,7 +1050,7 @@
               <div class="text-xs text-slate-600">Work on live industrial drawings, calculation sheets, and real production repos.</div>
             </div>
           </div>
-          <a href="https://wa.me/919876543210?text=Hello,%20I%20am%20interested%20in%20Shree%20Engineers%20training%20programmes" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-sky-700 hover:text-sky-800 underline underline-offset-4">
+          <a href="https://wa.me/918976600537?text=Hello,%20I%20am%20interested%20in%20Shree%20Engineers%20training%20programmes" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-sky-700 hover:text-sky-800 underline underline-offset-4">
             Ask for Training Syllabus on WhatsApp →
           </a>
         </div>
@@ -1336,18 +1396,17 @@
             <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all shadow-xs flex items-start gap-4">
               <div class="p-3 rounded-xl bg-sky-50 text-sky-600 shrink-0 border border-sky-100"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
               <div>
-                <h4 class="text-sm font-bold text-slate-900 mb-1">Corporate Head Office</h4>
-                <p class="text-xs text-slate-600 leading-relaxed">Shree Engineers Industrial & Technology Complex,<br>Industrial Area, Phase II, Pune / Navi Mumbai, Maharashtra, India.</p>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Office Address</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">B/12, Prabhat CHSL, Senapati Bapat Marg,<br>Dadar (West), Mumbai, Maharashtra 400028</p>
               </div>
             </div>
 
             <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all shadow-xs flex items-start gap-4">
               <div class="p-3 rounded-xl bg-blue-50 text-blue-600 shrink-0 border border-blue-100"><i data-lucide="phone-call" class="w-5 h-5"></i></div>
               <div>
-                <h4 class="text-sm font-bold text-slate-900 mb-1">Direct Lines & Inquiries</h4>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Phone / WhatsApp</h4>
                 <p class="text-xs text-slate-600">
-                  Engineering Desk: <a href="tel:+919876543210" class="text-sky-700 font-semibold hover:underline">+91 98765 43210</a><br>
-                  Software Solutions: <a href="tel:+919876543211" class="text-sky-700 font-semibold hover:underline">+91 98765 43211</a>
+                  Direct Line: <a href="tel:+918976600537" class="text-sky-700 font-semibold hover:underline">+91 8976600537</a>
                 </p>
               </div>
             </div>
@@ -1355,10 +1414,21 @@
             <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all shadow-xs flex items-start gap-4">
               <div class="p-3 rounded-xl bg-amber-50 text-amber-700 shrink-0 border border-amber-100"><i data-lucide="mail" class="w-5 h-5"></i></div>
               <div>
-                <h4 class="text-sm font-bold text-slate-900 mb-1">Electronic Mail</h4>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Mail ID</h4>
                 <p class="text-xs text-slate-600">
-                  General: <a href="mailto:info@shreeengineers.com" class="text-amber-700 font-semibold hover:underline">info@shreeengineers.com</a><br>
-                  RFQs & Proposals: <a href="mailto:projects@shreeengineers.com" class="text-amber-700 font-semibold hover:underline">projects@shreeengineers.com</a>
+                  <a href="mailto:info@shreeengineerscom.org" class="text-amber-700 font-semibold hover:underline">info@shreeengineerscom.org</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 hover:border-sky-400 transition-all shadow-xs flex items-start gap-4">
+              <div class="p-3 rounded-xl bg-purple-50 text-purple-700 shrink-0 border border-purple-100"><i data-lucide="globe" class="w-5 h-5"></i></div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-1">Official Website</h4>
+                <p class="text-xs text-slate-600">
+                  <a href="https://shreeengineerss.in" target="_blank" rel="noopener noreferrer" class="text-purple-700 font-semibold hover:underline">
+                    shreeengineerss.in
+                  </a>
                 </p>
               </div>
             </div>
@@ -1368,8 +1438,8 @@
               <div>
                 <h4 class="text-sm font-bold text-slate-900 mb-1">Instant WhatsApp Support</h4>
                 <p class="text-xs text-slate-600 mb-2">Immediate responses for drawing reviews, software demos, and training inquiries.</p>
-                <a href="https://wa.me/919876543210?text=Hello%20Shree%20Engineers,%20I%20have%20an%20inquiry" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-800">
-                  <span>Chat on WhatsApp Now</span> <span>→</span>
+                <a href="https://wa.me/918976600537?text=Hello%20Shree%20Engineers,%20I%20have%20an%20inquiry" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-800">
+                  <span>Chat on WhatsApp Now (+91 8976600537)</span> <span>→</span>
                 </a>
               </div>
             </div>
@@ -1397,7 +1467,7 @@
                 <div class="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1.5">Phone Number *</label>
-                    <input type="tel" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+                    <input type="tel" required placeholder="+91 8976600537" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
                   </div>
                   <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1.5">Subject / Project Type</label>
@@ -1552,24 +1622,34 @@
         </div>
 
         <div class="space-y-3">
-          <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold">Inquiries & RFQs</h4>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold">Contact & Inquiries</h4>
           <div class="space-y-2 text-xs">
             <div class="flex items-center gap-2 text-slate-300">
               <i data-lucide="phone" class="w-3.5 h-3.5 text-sky-400"></i>
-              <span>+91 98765 43210</span>
+              <a href="tel:+918976600537" class="hover:text-white transition-colors">+91 8976600537</a>
             </div>
             <div class="flex items-center gap-2 text-slate-300">
               <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-400"></i>
-              <span>info@shreeengineers.com</span>
+              <a href="mailto:info@shreeengineerscom.org" class="hover:text-white transition-colors">info@shreeengineerscom.org</a>
+            </div>
+            <div class="flex items-center gap-2 text-slate-300">
+              <i data-lucide="globe" class="w-3.5 h-3.5 text-purple-400"></i>
+              <a href="https://shreeengineerss.in" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">shreeengineerss.in</a>
             </div>
             <div class="flex items-start gap-2 text-slate-400 text-[11px] pt-1">
               <i data-lucide="map-pin" class="w-3.5 h-3.5 text-sky-400 shrink-0 mt-0.5"></i>
-              <span>Industrial Complex, Phase II, Pune / Navi Mumbai, MH</span>
+              <span>B/12, Prabhat CHSL, Senapati Bapat Marg, Dadar (West), Mumbai 400028</span>
             </div>
           </div>
-          <button onclick="openQuoteModal()" class="mt-3 w-full py-2.5 px-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 shadow-sm">
-            Request Quick Quote
-          </button>
+          <div class="pt-2 space-y-2">
+            <a href="docs/shree-engineers-autocad-brochure.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 px-3 rounded-xl text-xs font-bold text-sky-300 bg-slate-800/80 hover:bg-slate-800 border border-slate-700 flex items-center justify-center gap-1.5 transition-colors">
+              <i data-lucide="file-text" class="w-3.5 h-3.5 text-sky-400"></i>
+              <span>Download Brochure (PDF)</span>
+            </a>
+            <button onclick="openQuoteModal()" class="w-full py-2.5 px-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 shadow-sm">
+              Request Quick Quote
+            </button>
+          </div>
         </div>
 
       </div>
@@ -1617,7 +1697,7 @@
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1.5">Phone / WhatsApp Number *</label>
-              <input id="modal-phone" type="tel" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
+              <input id="modal-phone" type="tel" required placeholder="+91 8976600537" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-sky-600 focus:bg-white transition-colors">
             </div>
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1.5">Expected Timeline</label>
@@ -1700,7 +1780,7 @@
 
   <!-- ==================== 13. FLOATING WHATSAPP BUTTON ==================== -->
   <aside aria-label="Floating WhatsApp Inquiry" class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
-    <a href="https://wa.me/919876543210?text=Hello%20Shree%20Engineers,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="p-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-xl hover:shadow-emerald-600/40 hover:scale-105 transition-all flex items-center justify-center group" title="Chat with Shree Engineers on WhatsApp">
+    <a href="https://wa.me/918976600537?text=Hello%20Shree%20Engineers,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="p-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-xl hover:shadow-emerald-600/40 hover:scale-105 transition-all flex items-center justify-center group" title="Chat with Shree Engineers on WhatsApp">
       <i data-lucide="message-square" class="w-6 h-6 fill-current"></i>
       <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold px-0 group-hover:px-2">
         WhatsApp Inquiry
